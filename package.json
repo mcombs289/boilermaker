@@ -4,11 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "start-dev": "webpack -w & nodemon server"
   },
   "author": "Madison Combs",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "@babel/preset-env": "^7.20.2",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.4",
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
   }
 }
